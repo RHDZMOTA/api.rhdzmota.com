@@ -42,6 +42,11 @@ http {
 	location / {
 	    try_files $uri $uri/ =404;
         }
+        location /author {
+            proxy_pass http://rhdzmota.com/#about
+        }
+
     }
+
 }
 
