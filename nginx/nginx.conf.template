@@ -1,9 +1,9 @@
 # worker_processes 5;
 # daemon off;  # run in foreground
 
-#events {
-#    worker_connections  4096;  # Default: 1024
-#}
+events {
+    worker_connections  4096;  # Default: 1024
+}
 
 http {
     access_log /dev/stdout;
