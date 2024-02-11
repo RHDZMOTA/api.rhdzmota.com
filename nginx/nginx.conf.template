@@ -2,7 +2,7 @@
 # daemon off;  # run in foreground
 
 events {
-  worker_connections  4096;  # Default: 1024
+#  worker_connections  4096;  # Default: 1024
 }
 
 http {
