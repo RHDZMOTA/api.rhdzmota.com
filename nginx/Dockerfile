@@ -6,4 +6,4 @@ COPY . /usr/share/nginx/html
 EXPOSE ${PORT}
 
 # Start Nginx when the container has provisioned. 
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["nginx", "-c", "/etc/nginx/conf.d/nginx.conf", "-g", "daemon off;"]
