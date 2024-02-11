@@ -36,8 +36,11 @@ http {
         listen [::]:${PORT};
         server_name localhost;
 	
+	root /usr/share/nginx/html;
+	index index.html;
+
 	location / {
-            root /usr/share/nginx/html/static;
+	    try_files $uri $uri/ =404;
         }
     }
 }

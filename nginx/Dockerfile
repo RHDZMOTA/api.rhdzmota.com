@@ -1,7 +1,8 @@
 FROM nginx
 
 COPY nginx.conf.template /etc/nginx/templates/nginx.conf.template
-COPY . /usr/share/nginx/html
+COPY site /usr/share/nginx/html
+COPY static /usr/share/nginx/html/static
 
 EXPOSE ${PORT}
 
