@@ -39,11 +39,11 @@ http {
 	root /usr/share/nginx/html;
 	index index.html;
 
-	location / {
-	    try_files $uri $uri/ =404;
-        }
         location /author {
             proxy_pass http://rhdzmota.com/#about;
+        }
+	location / {
+	    try_files $uri $uri/ =404;
         }
 
     }
