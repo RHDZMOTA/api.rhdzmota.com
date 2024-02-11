@@ -1,6 +1,6 @@
 FROM nginx
 
-COPY nginx.conf.template /etc/nginx/templated/nginx.conf.template
+COPY nginx.conf.template /etc/nginx/templates/nginx.conf.template
 COPY . /usr/share/nginx/html
 
 EXPOSE ${PORT}
